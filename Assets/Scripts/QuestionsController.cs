@@ -7,10 +7,9 @@ public class QuestionsController : MonoBehaviour
 {
         [SerializeField] private TextMeshProUGUI statementText;
         [SerializeField] private TextMeshProUGUI[] optionTexts;
-        private Questions questions;
+        private List<Question> unansweredQuestions;
         private int currentQuestion;
-        private int totalQuestions;
-        private string dataPath;
+        // private int totalQuestions;
 
         private void Start()
         {
@@ -20,6 +19,15 @@ public class QuestionsController : MonoBehaviour
         private void Init()
         {
             currentQuestion = 0;
+            unansweredQuestions = new List<Question>();
+            if(QuestionsManager.Instance.IsParsed)
+            {
+                foreach (Question ques in QuestionsManager.Instance.questions.questionsList)
+                {
+                    // if(ques.difficulty = selectedDifficulty)
+                    unansweredQuestions.Add(ques);
+                }
+            }
             DisplayQuestion(currentQuestion);
         }
 
@@ -33,29 +41,17 @@ public class QuestionsController : MonoBehaviour
 
         private void DisplayQuestion(int questionNumber)
         {
-            statementText.text = questions.questionsList[questionNumber].GetStatement();
-            DisplayOptions(questionNumber);
+            statementText.text = "yo";
+            // questions.questionsList[questionNumber].statement;
+            UpdateOptions(questionNumber);
         }
 
-        private void DisplayOptions(int questionNumber)
+        private void UpdateOptions(int questionNumber)
         {
             for(int i=0; i<4; i++)
             {
-                optionTexts[i].text = questions.questionsList[questionNumber].GetOption(i);
+                optionTexts[i].text = unansweredQuestions[questionNumber].options[i];
             }
-        }
-        #endregion
-
-        #region -------------------- Parse Methods------------
-
-        private void ParseQuestions()
-        {
-            int i=0;
-            TextAsset questionsTextAsset = (TextAsset) Resources.Load(dataPath);
-            Debug.Log("Questions Text: " + questionsTextAsset.text);
-            Questions questions = JsonUtility.FromJson<Questions>(questionsTextAsset.ToString());
-            
-            Debug.Log(questions.questionsList[0].GetAnswer());
         }
         #endregion
 
