@@ -1,18 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameView : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private TMPro.TextMeshProUGUI gameOverScoreText;
+    [SerializeField] private Button goToMenuBtn;
+
+    void Awake()
     {
-        
+        goToMenuBtn.onClick.AddListener(()=>OnGoToMenuBtnClick());
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnGoToMenuBtnClick()
     {
-        
+        GameManager.Instance.LoadMainMenuScene();
     }
+
+    public void GameOver()
+    {
+        gameOverScreen.SetActive(true);
+        gameOverScoreText.text = "SCORE: " + GameManager.Instance.score + " / " + GameManager.Instance.totalQuestionsInCurrentRound;
+    }
+
+
 }

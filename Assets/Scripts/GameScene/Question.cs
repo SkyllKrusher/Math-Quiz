@@ -8,5 +8,5 @@ public class Question
     public string statement;
     public string[] options;
     public int answer; //0 to 3
-    public int difficultyLevel; // (0 to 2)easy, medium hard
+    public int difficulty; // (0 to 2)easy, medium hard
 }
