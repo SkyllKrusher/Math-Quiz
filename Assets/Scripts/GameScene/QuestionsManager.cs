@@ -36,10 +36,10 @@ public class QuestionsManager : MonoBehaviour
     private void ParseQuestions()
     {
         TextAsset questionsTextAsset = (TextAsset) Resources.Load(questionsDataFilePath);
-        // Debug.Log("Questions Text: " + questionsTextAsset.text);
+        Debug.Log("Questions Text: " + questionsTextAsset.text);
         questions = JsonUtility.FromJson<Questions>(questionsTextAsset.ToString());
         isParsed = true;
-        Debug.Log(questions.questionsList.Count);
+        // Debug.Log(questions.questionsList.Count);
     }
 
     #endregion -----------------------------------------------------------------------------------------------

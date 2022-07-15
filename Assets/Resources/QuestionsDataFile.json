@@ -3,12 +3,39 @@
         {
             "statement": "Question 1",
             "options": ["a", "b", "c", "d"],
-            "answer": 1
+            "answer": 0,
+            "difficulty": 0
         },
         {
             "statement": "Question 2",
             "options": ["a2", "b2", "c2", "d2"],
-            "answer": 2
+            "answer": 0,
+            "difficulty": 1
+        },
+        {
+            "statement": "Question 3",
+            "options": ["a3", "b3", "c3", "d3"],
+            "answer": 0,
+            "difficulty": 1
+        },
+        {
+            "statement": "Question 4",
+            "options": ["a4", "b4", "c4", "d4"],
+            "answer": 1,
+            "difficulty": 0
+        },
+        {
+            "statement": "Question 5",
+            "options": ["a5", "b5", "c5", "d5"],
+            "answer": 2,
+            "difficulty": 1
+        },
+        {
+            "statement": "Question 6",
+            "options": ["a6", "b6", "c6", "d6"],
+            "answer": 3,
+            "difficulty": 2
         }
+        
     ]
 }
