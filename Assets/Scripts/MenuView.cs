@@ -16,7 +16,7 @@ public class MenuView : MonoBehaviour
 
     private void OnClickPlay()
     {
-        GameManager.Instance.SetDifficultyLevel(difficultyLevelDropdown.value+1);
+        GameManager.Instance.SetDifficultyLevel(difficultyLevelDropdown.value);
         Debug.Log(GameManager.Instance.difficultyLevel);
         GameManager.Instance.LoadGameScene();
     }

@@ -1,41 +1,108 @@
 {
     "questionsList": [
         {
-            "statement": "Question 1",
-            "options": ["a", "b", "c", "d"],
-            "answer": 0,
+            "statement": "671 - 350",
+            "options": ["200", "311", "321", "232"],
+            "answer": 2,
             "difficulty": 0
         },
         {
-            "statement": "Question 2",
-            "options": ["a2", "b2", "c2", "d2"],
-            "answer": 0,
-            "difficulty": 1
+            "statement": "12 + 15 = ?",
+            "options": ["12", "15", "27", "38"],
+            "answer": 2,
+            "difficulty": 0
         },
         {
-            "statement": "Question 3",
-            "options": ["a3", "b3", "c3", "d3"],
-            "answer": 0,
-            "difficulty": 1
+            "statement": "69 - 420",
+            "options": ["210", "-323", "-351", "-210"],
+            "answer": 2,
+            "difficulty": 0
         },
         {
-            "statement": "Question 4",
-            "options": ["a4", "b4", "c4", "d4"],
+            "statement": "The simplest form of 16/24 is:",
+            "options": ["3/5", "2/3", "2/5", "1/3"],
             "answer": 1,
             "difficulty": 0
         },
         {
-            "statement": "Question 5",
-            "options": ["a5", "b5", "c5", "d5"],
+            "statement": "Which of these lies between 6.3 and 6.6?",
+            "options": ["6.2", "6.9", "6.05", "6.41"],
+            "answer": 3,
+            "difficulty": 0
+        },
+        {
+            "statement": "Two angles of a triangle measure 35 degrees and 65 degrees. What is the measure of the third angle of the triangle?",
+            "options": ["100 degrees", "80 degrees", "125 degrees", "135 degrees"],
+            "answer": 1,
+            "difficulty": 0
+        },
+        {
+            "statement": "The place value of 3 in 1.234:",
+            "options": ["3", "3/10", "3/100", "3/1000"],
+            "answer": 2,
+            "difficulty": 0
+        },
+
+        {
+            "statement": "What fraction should be added with -4/9 to get 6/17?",
+            "options": ["104/163", "136/151", "122/153", "103/130"],
             "answer": 2,
             "difficulty": 1
         },
         {
-            "statement": "Question 6",
-            "options": ["a6", "b6", "c6", "d6"],
+            "statement": "Find the value of 5x - 6y - 8z, if x = 2, y = 3 and z = -2.",
+            "options": ["5", "15", "18", "8"],
+            "answer": 3,
+            "difficulty": 1
+        },
+        {
+            "statement": "A number is 7 times greater than another number. If their sum is 96, find the numbers.",
+            "options": ["84, 12", "21, 75", "49, 51", "13, 32"],
+            "answer": 0,
+            "difficulty": 1
+        },
+        {
+            "statement": "Which of the following are Pythagorean triplet?",
+            "options": ["12, 16, 20", "9, 12, 15", "12, 22, 15", "10, 12, 34"],
+            "answer": 0,
+            "difficulty": 1
+        },
+        {
+            "statement": "The sum of two numbers is 80 and their ratio is 3:5.Find the numbers.",
+            "options": ["18 and 30", "21 and 35", "20 and 60", "30 and 50"],
+            "answer": 3,
+            "difficulty": 1
+        },
+    
+        {
+            "statement": "If 1+2+….+k=55, then the value of k is?",
+            "options": ["10", "11", "12", "13"],
+            "answer": 0,
+            "difficulty": 2
+        },
+        {
+            "statement": "If cot A = 12/5, then the value of (sin A + cos A) x cosec A is :",
+            "options": ["1", "14/5", "13/5", "17/5"],
             "answer": 3,
             "difficulty": 2
-        }
-        
+        },
+        {
+            "statement": "In a lottery, there are 10 prizes and 20 blanks. What is the probability of getting a prize?",
+            "options": ["1/2", "1/3", "1", "1/10"],
+            "answer": 1,
+            "difficulty": 2
+        },
+        {
+            "statement": "The HCF of two numbers, a and b, is 30, while their LCM is 45. What is the value of (a x b)?",
+            "options": ["1335", "1350", "1250", "1255"],
+            "answer": 1,
+            "difficulty": 2
+        },
+        {
+            "statement": "What is the derivative of y = sin (2x + 5)",
+            "options": ["cos(2) + 5", "cos(2x + 5)", "2cos(2x + 5)", "-2cos(2x + 5)"],
+            "answer": 2,
+            "difficulty": 2
+        }    
     ]
 }
